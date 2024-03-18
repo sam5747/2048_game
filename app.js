@@ -201,7 +201,7 @@ play.onclick = () =>{
   function checkForWin() {
     for (let i=0; i < squares.length; i++) {
       if (squares[i].innerHTML == 2048) {
-        resultDisplay.innerHTML = 'You WIN'
+        resultDisplay.innerHTML = 'You WIN, Okay bye bye now'
         gameOverSound.play();
         musicSound.pause();
         document.removeEventListener('keyup', control)
