@@ -1,4 +1,4 @@
-const comment = ["Try hard","Loser","Wow, what a game","You are improving better than last time","Defeated"];
+const comment = ["Try hard","Loser","Wow, what a game","You are improving better than last time","Defeated","So close, Yet So far from perfection."];
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 const musicSound = new Audio('music/music.mp3');
@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () =>  {
   const width = 4
   let score = 0
 
+  const play = document.getElementById("info");
+play.onclick = () =>{
+    location.href = "info.html";
+};
   //create the playing board
   function createBoard() {
     for (let i=0; i < width*width; i++) {
