@@ -258,3 +258,23 @@ addColours()
 var myTimer = setInterval(addColours, 50)
 
 })
+
+var storedData = localStorage.getItem('personalInfo');
+    if (storedData) {
+      var data = JSON.parse(storedData);
+      document.getElementById('infoDisplay').innerHTML = `
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Nickname:</strong> ${data.nickname}</p>
+      `;
+    } else {
+      alert("No data found. Please enter your information first.");
+      window.location.href = 'home.html';
+    }
+
+function reloadPage(){
+  location.reload();
+}
+
+function changePage(){
+  location.href = 'home.html';
+}

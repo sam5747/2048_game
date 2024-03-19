@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Info</title>
 </head>
 <body>
     <h1>2048 Game rules</h1>
@@ -14,6 +14,11 @@
         <li>To only rule of the game is that you have to merge 2 tiles with the same numerical value and then they become 1 tile with x2 of their original value then you have to merge this new x2 tile with another x2 tile until you reach 2048.</li>
     </ul>
     <img id="Back" src="back.png" alt="back"/>
-    <script src="info.js" charset="utf-8"></script>
+    <script>
+        const plays = document.getElementById("Back");
+plays.onclick = () =>{
+    location.href = "index.html";
+};
+    </script>
 </body>
 </html>
