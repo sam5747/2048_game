@@ -74,3 +74,36 @@ h1 {
   height: 25px;
   cursor: pointer;
 }
+
+@media screen and  (min-width: 425px){
+  h1 {
+    font-size: 150px;
+  }
+
+  span{
+    font-size: 50px;
+  }
+  #infoDisplay{
+    font-size: 30px;
+  }
+  button{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #info{
+    width: 40px;
+    height: 40px;
+  }
+  .score-container {
+    width: 80px;
+    height: 80px;
+  }
+  #score {
+    font-size: 40px;
+  }
+  
+  .score-title {
+    font-size: 20px;
+  }
+}
